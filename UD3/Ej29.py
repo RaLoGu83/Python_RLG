@@ -5,11 +5,11 @@ maximo = 100
 
 while True:
     adivino = (minimo + maximo) // 2
-    print(f"\nCreo que tu número es: {adivino}")
+    print(f"Creo que tu número es: {adivino}")
     respuesta = input("¿Es mayor (m), menor (n) o igual (i)?: ")
 
     if respuesta == "i":
-        print(f"\nFacilito.")
+        print(f"Facilito.")
         break
     elif respuesta == "m":
         minimo = adivino + 1
