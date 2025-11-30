@@ -1,11 +1,13 @@
-altura = int(input("Altura: "))
+altura = int(input("Altura (solo números impares): "))
 ast = "*"
 espacios = " "
 
 print(ast + (espacios*(altura-2)) + ast)
 
+
 for i in range (1, altura//2):
     print(ast + (espacios*(i-1)) + ast + (espacios*(altura-2-2*i)) + ast +(espacios*(i-1)) + ast)
+
 
 print(ast + (espacios*(altura//2-1)) + ast + (espacios*(altura//2-1)) + ast)
 
