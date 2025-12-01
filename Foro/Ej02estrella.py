@@ -10,10 +10,10 @@ altura = int(input("Introduce la altura: "))
 ast = "*"
 espacios = " "
 
-for i in range ( 3 ):
-    print((espacios*i) + ast + (espacios*abs(3-i) + ast) + (espacios*abs(3-i)) + ast)
+for i in range (1, altura//2 ):
+    print((espacios*(i-1)) + ast + (espacios*abs(altura//2-i) + ast) + (espacios*abs(altura//2-i)) + ast)
     
 print(ast*altura)
 
-for j in range ( 3, 0, -1 ):
-    print((espacios*(j-1)) + ast + espacios +(espacios*abs(3-j) + ast) + espacios +(espacios*abs(3-j)) + ast)
+for j in range ( altura//2, 1, -1 ):
+    print((espacios*((j-1)-1)) + ast + espacios +(espacios*abs(altura//2-j) + ast) + espacios +(espacios*abs(altura//2-j)) + ast)
